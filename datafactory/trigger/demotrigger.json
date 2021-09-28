@@ -1,0 +1,25 @@
+{
+	"name": "demotrigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 2,
+				"startTime": "2021-09-22T21:55:00Z",
+				"endTime": "2021-09-23T21:55:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}

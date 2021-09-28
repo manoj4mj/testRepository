@@ -1,0 +1,19 @@
+{
+	"name": "msmDataLakeStorage",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://msmdatalakegen2.dfs.core.windows.net",
+			"accountKey": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LSKeyVault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "msmAKsecret"
+			}
+		}
+	}
+}

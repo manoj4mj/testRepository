@@ -1,0 +1,9 @@
+{
+	"name": "mdatafactories",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "15b53187-8ea9-4387-9f79-e1f2cd1d7500",
+		"tenantId": "ab92ebc3-838e-4ae1-af09-52d7a37fe2cc"
+	}
+}

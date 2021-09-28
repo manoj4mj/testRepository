@@ -1,0 +1,45 @@
+{
+	"name": "DS_sink_order",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "msmSqlDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "dataset for source to sink"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "orderID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "prodID",
+				"type": "varchar"
+			},
+			{
+				"name": "customerID",
+				"type": "varchar"
+			},
+			{
+				"name": "quantity",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "insertDateTime",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "final_order"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
