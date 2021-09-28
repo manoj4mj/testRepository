@@ -1,6 +1,7 @@
 {
 	"name": "pipeline1",
 	"properties": {
+		"description": "Retrieve data from raw table to target table and store the data. ",
 		"activities": [
 			{
 				"name": "OldwaterMark",
